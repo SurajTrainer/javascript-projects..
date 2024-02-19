@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #031a48;
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    color: #ffffff;
+    margin-top: 30vh;
+}
+.container h1{
+    font-size: 40px;
+}
+.container h1 span{
+    font-size: 38px;
+    border-bottom: 5px solid green;
+    padding-bottom: 6px;
+    color: green;
+}
+
+
+.display{
+    width: 48%;
+    padding: 18px 30px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-top: 27px;
+    border-radius: 6px;
+    display: flex;
+    margin-left: 34%;
+    justify-content: space-between;
+}
+.display input{
+    padding: 8px 22px;
+    font-size: 20px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+}
+.display img{
+    cursor: pointer;
+}
+
+
+ .btn{
+    margin-right: 98px;
+    margin-top: 20px;
+}
+
+ .btn button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: #ffffff;
+    padding: 8px 9px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+
+/* .container {
+    text-align: center;
+}
+
+.password {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+} */
