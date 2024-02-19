@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(105deg, rgb(110, 80, 85), rgb(86, 86, 226));
+    color: #fff;
+}
+.container{
+    margin: 39px 52px;
+}
+.container h1{
+    font-size: 27px;
+}
+.container h1 img{}
+.container button{
+    background-color: #362bb6;
+    border-radius: 39px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 12px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin: 6px 0;
+}
+.container button img{}
+
+.notes-container{}
+.notes-container p{
+    width: 32vw;
+    height: 16vh;
+    background: #fff;
+    margin-top: 16px;
+    border-radius: 7px;
+    position: relative;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-size: 20px;
+    padding: 17px 15px;
+}
+.notes-container p img{
+    position: absolute;
+    right: 6px;
+    bottom: 9px;
+    cursor: pointer;
+}
+
