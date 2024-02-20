@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quote-container">
+            <p id="quote-text">This is a sample quote.</p>
+            <p id="author">author name</p>
+            <button onclick="getURL()" id="generate-btn">Generate Quote</button>
+            <button onclick="tweet()" id="tweet-box"><img src="img/twitter.svg" alt="">Tweet box</button>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        let quote = document.getElementById('quote-text')
+        let author = document.getElementById('author')
+        // const url_api = 'https://api.quotable.io/random';
+
+        // async function getURL(url) {
+        //     const response = await fetch(url)
+        //     let data = await response.json()
+        //     quote.innerHTML = data.content
+        //     author.innerHTML = data.author
+        //     // console.log(data);
+        // }
+        // getURL(url_api)
+
+
+
+        // with 2nd way...
+
+        async function getURL() {
+            const response = await fetch('https://api.quotable.io/random')
+            let data = await response.json()
+            quote.innerHTML = data.content
+            author.innerHTML = `author : ${data.author}`
+
+        }
+        getURL()
+
+        function tweet() {
+            window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + '---by' + author.innerHTML, 'Tweet window', "width=500,height=300")
+        }
+    </script>
+</body>
+</html>
