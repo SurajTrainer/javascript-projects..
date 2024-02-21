@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toast Notification Example</title>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showToast(successMsg)" id="success">Success</button>
+        <button onclick="showToast(errorMsg)" id="error">Error</button>
+        <button onclick="showToast(invalidMsg)" id="invalid">Invalid</button>
+    </div>
+
+    <div id="toast-Box">
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+
+        const toastBox = document.getElementById('toast-Box');
+        let successMsg = '<img src="img/success.svg" alt="">successfully submitted..'
+        let errorMsg = '<img src="img/alert.svg" alt="">get an error in this code..'
+        let invalidMsg = '<img src="img/cancel.svg" alt="">invalid input,, please try again....'
+
+
+        function showToast(msg) {
+            let toast = document.createElement('div')
+            toast.classList.add('toast')
+            toast.innerHTML = msg;
+            toastBox.appendChild(toast)
+
+            if (msg.includes('error')) {
+                toast.classList.add('error')
+            }
+            if (msg.includes('invalid')) {
+                toast.classList.add('invalid')
+            }
+            setTimeout(() => {
+                toast.remove()
+            }, 7000);
+        }
+    </script>
+</body>
+</html>
