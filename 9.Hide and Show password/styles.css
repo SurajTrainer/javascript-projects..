@@ -1,0 +1,51 @@
+/* Styles for the password input and toggle button */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(123deg,white,gray);
+}
+
+
+.input-box{
+    background: linear-gradient(45deg, #7d7098, #aec918);
+    padding: 42px 28px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input{
+    padding: 10px 25px;
+    border: 0;
+    outline: 0;
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.input-box img{
+    position: absolute;
+    right: 42%;
+    cursor: pointer;
+}
+
+
+
+.toggle-password {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 10px;
+}
