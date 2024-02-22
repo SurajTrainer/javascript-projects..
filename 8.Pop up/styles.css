@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(135deg, yellow, green);
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 16px 27px;
+    font-size: 29px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    margin: 28px;
+    cursor: pointer;
+    background: linear-gradient(123deg, #348d6b, #d02828);
+}
+
+
+.popup {
+    background:linear-gradient(123deg,white , gray) ;
+    padding: 11px 13px;
+    line-height: 37px;
+    text-align: center;
+    position: absolute;
+    border-radius: 12px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    width: 32%;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -60px;
+}
+.popup h2{
+    font-size: 31px;
+    margin-bottom: 10px;
+}
+
+.popup p{
+    font-size: 22px;
+}
+
+.popup button{
+    width: 71%;
+    background-color: #32b732;
+    margin: 23px 0;
+    padding: 14px 27px;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}

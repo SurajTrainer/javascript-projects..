@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Popup Example</title>
+</head>
+<body>
+
+    <!-- <button id="openPopupButton" onclick="openPopup()">Open Popup</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>This is a simple popup!</p>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <button type="submit" class="btn" onclick="openpopup()">Pop Up..</button>
+        <div class="popup" id="popup">
+            <img src="img/check.svg" alt="">
+            <h2>Thank You!.</h2>
+            <p>Your all important messages has been submit successfully...</p>
+            <button type="button" onclick="closepopup()">Ok.</button>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        let popup = document.getElementById('popup')
+
+        function openpopup() {
+            popup.classList.add('open-popup');
+        }
+        function closepopup() {
+            popup.classList.remove('open-popup');
+        }
+    </script>
+</body>
+</html>
