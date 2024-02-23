@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(134deg,rgb(139 139 139),rgb(76 56 56));
+}
+
+.password-container {
+    text-align: center;
+}
+
+.password-container img{
+    border: 2px solid #fff;
+    position: absolute;
+    width: 41px;
+    border-radius: 22px;
+    right: 40%;
+    background: linear-gradient(134deg, #b37a94, #99f8db);
+    cursor: pointer;
+}
+
+.password-container #message{
+    display: flex;
+    justify-content: start;
+    color: #fff9f9;
+    padding: 4px 24px;
+    display: none;
+    margin-left: -114px;
+}
+
+#password {
+    width: 300px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    position: relative;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+#password::placeholder{
+    color: #fff;
+}
+
+
+#strength-indicator {
+    width: 300px;
+    height: 10px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+.strength-bar {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.weak {
+    background: #ff8080;
+}
+
+.medium {
+    background: #ffcc66;
+}
+
+.strong {
+    background: #85e085;
+}

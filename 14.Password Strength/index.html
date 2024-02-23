@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Strength Indicator</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <div class="password-container">
+        <h2>Password Strength Indicator</h2>
+        <input type="password" id="password" placeholder="password">
+        <img src="img/thumbs-up.svg" alt="">
+        <p id="message">Password is : <span id="strength"></span></p>
+        <!-- <div id="strength-indicator">
+            <div class="strength-bar weak"></div>
+        </div> -->
+    </div>
+
+
+    <script>
+        
+        let password = document.getElementById('password');
+        let message = document.getElementById('message');
+        let strength = document.getElementById('strength');
+
+        password.addEventListener('input',()=> {
+            if (password.value.length > 0) {
+                message.style.display = 'block';
+            }else{
+                message.style.display = 'none';
+            }
+
+            if (password.value.length < 4) {
+                strength.innerHTML = `"weak"`;
+                password.style.borderColor = 'red'
+                message.style.color = 'red'
+            }
+            
+            else if(password.value.length >= 4 && password.value.length < 8) {
+                strength.innerHTML = `"medium"`;
+                password.style.borderColor = 'yellow'
+                message.style.color = 'yellow'
+            }
+
+            else if(password.value.length >= 8) {
+                strength.innerHTML = `"strong"`;
+                password.style.borderColor = 'green'
+                message.style.color = 'green'
+            }
+        })
+    </script>
+
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
