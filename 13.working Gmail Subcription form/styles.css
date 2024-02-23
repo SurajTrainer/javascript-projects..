@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(img/img1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+     color: #fff;
+}
+
+.container h3{
+    margin-top: 42px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 2px solid palevioletred;
+    width: 20%;
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 13px 0;
+}
+
+.container p{
+    font-size: 23px;
+    margin: 16px 2px;
+    padding: 4px 9px;
+    color: rgb(189, 179, 179);
+}
+
+form{
+    background: #fff;
+    display: flex;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+form input{
+    width: 400px;
+    border: 0;
+    outline: none;
+    height: 70px;
+    font-size: 21px;
+}
+
+form button {
+    width: 100px;
+    height: 70px;
+    border: 0;
+    outline: none;
+    background: #5ed05e;
+    cursor: pointer;
+}
+
+#cmsg{
+    color: rgb(52, 119, 52);
+    padding: 22px 23px;
+    font-size: 23px;
+    margin: 12px 23px;
+}
