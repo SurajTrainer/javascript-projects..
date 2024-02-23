@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(105deg, #1c34b5, #69223a);
+}
+
+.container {
+    text-align: center;
+}
+
+.container h3{
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffe7e7;
+}
+
+.container h1{
+    font-size: 38px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.container h1 span{
+    color: red;
+    font-size: 43px;
+}
+
+.container button{
+    padding: 12px 17px;
+    font-size: 19px;
+    border-radius: 22px;
+    border: 0;
+    outline: none;
+    background: linear-gradient(145deg, #30d943, #ae8c24);
+    position: absolute;
+    right: 54%;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+
+.countdown {
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    padding: 16px 0;
+}
+
+.countdown p{
+    font-size: 49px;
+}
+
+.countdown span{
+    font-size: 24px;
+}
+
+.time{
+    padding: 12px;
+    margin: 0 12px;
+}
+
+.rocket img{
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0.2;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
