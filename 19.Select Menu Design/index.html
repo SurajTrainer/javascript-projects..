@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select Menu Design</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="selector">
+            <div id="selectField">
+                <p id="selectText">Select Social media.</p>
+                <img id="imgrotate" src="img/arrow-down.svg" alt="">
+            </div>
+            <ul id="list" class="hide">
+                <li class="options">
+                    <img src="img/facebook-01 (1).svg" alt="">
+                    <p>Facebook</p>
+                </li>
+                <li class="options">
+                    <img src="img/instagram (1).svg" alt="">
+                    <p>Instagram</p>
+                </li>
+                <li class="options">
+                    <img src="img/twitter.svg" alt="">
+                    <p>Twitter</p>
+                </li>
+                <li class="options">
+                    <img src="img/linkedin-01.svg " alt="">
+                    <p>Linkedin</p>
+                </li>
+                <li class="options">
+                    <img src="img/whatsapp (1).svg " alt="">
+                    <p>whatsapp</p>
+                </li>
+                <li class="options">
+                    <img src="img/snapchat.svg " alt="">
+                    <p>Snapchat</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        let selectField = document.getElementById('selectField');
+        let selectText = document.getElementById('selectText');
+        let options = document.getElementsByClassName('options');
+        let list = document.getElementById('list');
+        let imgrotate = document.getElementById('imgrotate');
+
+        selectField.onclick = function(){
+            list.classList.toggle('hide')
+            imgrotate.classList.toggle('rotate')
+    }
+
+        for (const option of options) {
+            option.onclick = function(){    
+                selectText.innerHTML = this.textContent;
+                list.classList.toggle('hide')
+                imgrotate.classList.toggle('rotate')
+            }
+        }
+    </script>
+</body>
+</html>
