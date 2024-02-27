@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5545c5;
+  }
+
+  .square{
+    width: 190px;
+    height: 190px;
+    background: linear-gradient(145deg, #f135a7, transparent);
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    border-radius: 4px;
+  }
+  #clock {
+    font-size: 4em;
+    color: #fff;
+    background: linear-gradient(135deg, violet, #5f11e6);
+    padding: 35px 84px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .circle{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(98deg, transparent, #18bcff);
+    position: absolute;
+    border-radius: 50%;
+    padding: 14px;
+    right: 27%;
+    top: 46%;
+  }

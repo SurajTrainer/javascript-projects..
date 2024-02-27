@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="square"> </div>
+    <div id="clock"></div>
+
+    <div class="circle"></div>
+
+    <script>
+        function updateClock() {
+          const now = new Date();
+          const hours = now.getHours().toString().padStart(2, '0');
+          const minutes = now.getMinutes().toString().padStart(2, '0');
+          const seconds = now.getSeconds().toString().padStart(2, '0');
+
+          const timeString = `${hours}:${minutes}:${seconds}`;
+          document.getElementById('clock').innerHTML = timeString;
+        }
+
+        // Initial call to display the time immediately
+        updateClock();
+
+        // Update the time every second
+        setInterval(updateClock, 1000);
+
+
+
+            // practiceing again
+
+        // let clock = document.getElementById('clock')
+        // function UpdateClock() {
+
+        //     const time = new Date();
+        //     let hours = time.getHours().toString().padStart(2,'0');
+        //     let minutes = time.getMinutes().toString().padStart(2,'0');
+        //     let seconds = time.getSeconds().toString().padStart(2,'0');
+
+        //     let currenttime = `${hours} : ${minutes} : ${seconds}`
+        //     clock.innerText = currenttime;
+
+        // }
+
+        // UpdateClock();
+        // setInterval(UpdateClock, 1000)
+
+
+
+        // using with setinterVal method..
+
+        // setInterval(() => {
+        //     let clock = document.getElementById('clock');
+
+        //     const time = new Date();
+
+        //     let hours = time.getHours().toString().padStart(2,'0');
+        //     let minutes = time.getMinutes().toString().padStart(2,'0');
+        //     let seconds = time.getSeconds().toString().padStart(2,'0');
+
+        //     let currenttime = `${hours} : ${minutes} : ${seconds}`
+        //         clock.innerHTML = currenttime;
+            
+        // }, 1000);
+
+    </script>
+</body>
+
+</html>
