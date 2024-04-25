@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="test3.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return false;">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="validateLogin()">Login</button>
+    </form>
+    <p id="error-msg" class="error-msg"></p>
+    <p id="success-msg" class="success-msg"></p>
+  </div>
+
+  <script src="test3.js"></script>
+</body>
+</html>
